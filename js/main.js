@@ -1,8 +1,13 @@
 'use strict';
 
+// a continuación el ejercicio 2 de la lección de condicionales
 const form = document.querySelector('.js-new-form');
-
-// form.classList.remove("collapsed");
+if (formElement.classList.contains('collapsed')) {
+  form.classList.remove("collapsed");
+} else {
+  form.classList.add("collapsed");
+}
+// final del ejercicio 2
 
 const kittenList = document.querySelector (".js_list");
 let kittenImage1 = 'https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg';

@@ -22,6 +22,7 @@ const kittenOne =  `<li class="card">
 </li>`;
 
 
+
 const kittetwo =  ` <li class="card">
 <img class="card_img"
     src="https://images.emedicinehealth.com/images/article/main_image/cat-scratch-disease.jpg"
@@ -50,3 +51,12 @@ const kittethree =  `<li class="card">
 
 
 list1.innerHTML =  kittethree +  kittetwo + kittenOne 
+
+
+
+let photo ;
+let name;
+let race;
+let descrption;
+
+photo = 

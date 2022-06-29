@@ -1,8 +1,8 @@
 'use strict';
 
-const form = document.querySelector('.js-new-form');
 
-// form.classList.remove("collapsed");
+
+
 
 const kittenList = document.querySelector (".js_list");
 let kittenImage = 'https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg';
@@ -62,3 +62,41 @@ const kittenThree = `<li class="card">
 
 
 kittenList.innerHTML = kittenOne + kittenTwo + kittenThree;
+
+const linkNewFormElememt = document.querySelector(".js-button");
+const newFormElement = document.querySelector('.js-new-form');
+
+
+
+
+linkNewFormElememt.addEventListener('click', handleClickNewCatForm);
+
+function handleClickNewCatForm () { 
+  newFormElement.classList.toggle('collapsed')
+}
+
+
+
+
+function renderKitten(url, desc, name, race) {
+  const addkitten   = ` <li><img
+  class="card_img"
+  src= ${url}
+  alt="gatito"
+/>
+<h3 class="card_title">${name.toUpperCase()}</h3>
+<h4 class="card_race">${race}</h4>
+<p class="card_description">
+  ${desc}
+</p>
+</article>
+</li>`;
+  return addkitten;
+}
+
+
+const result= renderKitten ( "https://images.emedicinehealth.com/images/article/main_image/cat-scratch-disease.jpg","siames", kittenDesc,kittenName) 
+
+
+kittenList.innerHTML = result
+

@@ -100,3 +100,15 @@ const result= renderKitten ( "https://images.emedicinehealth.com/images/article/
 
 kittenList.innerHTML = result
 
+
+
+
+const addbutton = document.querySelector(".js-addbutton");
+
+
+const handleClickaddNewCat = ( e) =>
+e.preventDefault();
+const addnewcat = 
+
+
+addbutton.addEventListener ( "click" , handleClickaddNewCat );
